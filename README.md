@@ -388,7 +388,7 @@ Buy me a coffee ☕ through [Paypal](https://paypal.me/valaxy), _or_ You can rea
 
 ### 📚 References
 
-1. [Source Repo](https://aws.amazon.com/blogs/media/running-mediainfo-as-an-aws-lambda-function)
+1. [AWS Blog](https://aws.amazon.com/blogs/media/running-mediainfo-as-an-aws-lambda-function)
 
 1. [Stackoverflow oserror-libmediainfo-so](https://stackoverflow.com/questions/52516828/oserror-libmediainfo-so-0-cannot-open-shared-object-file-no-such-file-or-dire)
 

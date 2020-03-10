@@ -1,0 +1,9 @@
+{
+    "customisations": "scruffy;dir:LR",
+    "type": "class",
+    "dsl": ", , [User | Upload Media {bg:peachpuff} ]-->[S3 | Event Trigger{bg:moccasin}], , [S3 | Event Trigger{bg:limegreen}]-->[Lambda | Extract Metadata], , [Lambda | Extract Metadata{bg:limegreen}]-.->[DynamoDB| Metadata in Table{bg:limegreen}]",
+    "digest": "398a2201",
+    "file_only": false,
+    "mime": "image/png",
+    "extension": "png"
+}
