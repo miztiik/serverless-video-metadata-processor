@@ -1,7 +1,31 @@
 {
   "app": "python3 app.py",
+  "versionReporting": false,
   "context": {
-    "@aws-cdk/core:enableStackNameDuplicates": "true",
-    "aws-cdk:enableDiffNoFail": "true"
+    "owner": "Mystique",
+    "app_name": "serverless-video-metadata-processor",
+    "github_repo_url": "https://github.com/miztiik/serverless-video-metadata-processor",
+    "github_profile": "https://github.com/miztiik",
+    "youtube_profile": "https://youtube.com/c/valaxytechnologies",
+    "envs": {
+      "dev": {
+        "account": "",
+        "region": "us-east-1",
+        "vpc_config": {
+          "cidr": "10.13.3.0/24",
+          "cidr_mask": 27,
+          "set_reserve": false
+        }
+      },
+      "prod": {
+        "account": "",
+        "region": "us-east-1",
+        "vpc_config": {
+          "cidr": "10.5.0.0/20",
+          "cidr_mask": 23,
+          "set_reserve": false
+        }
+      }
+    }
   }
 }

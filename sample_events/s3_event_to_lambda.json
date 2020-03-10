@@ -1,0 +1,38 @@
+{
+    "Records": [
+        {
+            "eventVersion": "2.1",
+            "eventSource": "aws:s3",
+            "awsRegion": "us-east-1",
+            "eventTime": "2020-03-10T12:23:37.646Z",
+            "eventName": "ObjectCreated:Put",
+            "userIdentity": {
+                "principalId": "AWS:AROA36..3TBMMREF:botocore-session-430..16"
+            },
+            "requestParameters": {
+                "sourceIPAddress": "10.32.36.38"
+            },
+            "responseElements": {
+                "x-amz-request-id": "E538E6223B976",
+                "x-amz-id-2": "GjHEwiYtkBfIjy74V+..+dVB+FDiaK0c+yYONgNQ1zNfMpQvmG"
+            },
+            "s3": {
+                "s3SchemaVersion": "1.0",
+                "configurationId": "ZWRjYzcyZj..2N2ItZmU2NWE0ZWNjZWY3",
+                "bucket": {
+                    "name": "serverless-video-metadata-proces-s3bucketfbfa637e-1dwz2xj60xynw",
+                    "ownerIdentity": {
+                        "principalId": "A7BCP..79ST"
+                    },
+                    "arn": "arn:aws:s3:::serverless-video-metadata-proces-s3bucketfbfa637e-1dwz2xj60xynw"
+                },
+                "object": {
+                    "key": "small.mp4",
+                    "size": 383631,
+                    "eTag": "a3ac7ddabb26..8177d15c8d",
+                    "sequencer": "005E6786C..CF232"
+                }
+            }
+        }
+    ]
+}
