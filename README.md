@@ -2,7 +2,7 @@
 
 Media processing applications often need information about what’s in audio and video files before they can do anything with those files. Video providers use it to get technical metadata about video codecs, frame rates, audio channels, duration, and more.
 
-  ![Miztiik Serverless Video Metadata Extractor](images/miztiik_security_automation_remediate_weak_s3_policy_architecture.png)
+  ![Miztiik Serverless Video Metadata Extractor](images/serverless-video-metadata-processor-arch-00.png)
 
   Follow this article in **[Youtube](https://www.youtube.com/c/ValaxyTechnologies)**
 
