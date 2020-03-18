@@ -18,7 +18,7 @@ Media processing applications often need information about what’s in audio and
     - Get the application code
 
         ```bash
-        git clone https://github.com:miztiik/serverless-video-metadata-processor.git
+        git clone https://github.com/miztiik/serverless-video-metadata-processor.git
         cd serverless-video-metadata-processor
         ```
 
