@@ -16,10 +16,11 @@ setuptools.setup(
     author="author",
 
     package_dir={"": "serverless_video_metadata_processor"},
-    packages=setuptools.find_packages(where="serverless_video_metadata_processor"),
+    packages=setuptools.find_packages(
+        where="serverless_video_metadata_processor"),
 
     install_requires=[
-        "aws-cdk.core==1.27.0",
+        "aws-cdk.core==1.29.0",
     ],
 
     python_requires=">=3.6",

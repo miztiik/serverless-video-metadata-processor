@@ -12,6 +12,10 @@ Media processing applications often need information about what’s in audio and
 
     - AWS CLI pre-configured - [Get help here](https://youtu.be/TPyyfmQte0U)
     - **Optional** AWS CDK Installed & Configured - [Get help here](https://www.youtube.com/watch?v=MKwxpszw0Rc)
+    - Python Packages, _Change the below commands to suit your OS_
+        - Python3 - `yum install -y python3`
+        - Python Pip - `yum install -y python-pip`
+        - Virtualenv - `pip3 install virtualenv`
 
 1. ## ⚙️ Setting up the environment
 
@@ -32,6 +36,7 @@ Media processing applications often need information about what’s in audio and
 
     # Make sure you in root directory
     cd fargate-chat-app
+    python3 -m venv .env
     source .env/bin/activate
     pip install -r requirements.txt
     ```
