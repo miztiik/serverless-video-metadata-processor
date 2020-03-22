@@ -11,9 +11,11 @@ class global_args:
     '''
     Helper to define global statics
     '''
-    OWNER = "MystiqueInfoSecurity"
-    ENVIRONMENT = "production"
-    SOURCE_INFO = "https://github.com:miztiik/serverless-video-metadata-processor"
+    OWNER = 'MystiqueAutomation'
+    ENVIRONMENT = 'production'
+    REPO_NAME = 'serverless-video-metadata-processor'
+    SOURCE_INFO = f'https://github.com/miztiik/{REPO_NAME}'
+    VERSION = '2020_03_20'
 
 
 class ServerlessVideoMetadataProcessorStack(core.Stack):
@@ -21,7 +23,6 @@ class ServerlessVideoMetadataProcessorStack(core.Stack):
     def __init__(self, scope: core.Construct, id: str, **kwargs) -> None:
         super().__init__(scope, id, **kwargs)
 
-        # The code that defines your stack goes here
         # The code that defines your stack goes here
         media_bkt = _s3.Bucket(
             self, "s3bucket", removal_policy=core.RemovalPolicy.DESTROY)
@@ -58,7 +59,8 @@ class ServerlessVideoMetadataProcessorStack(core.Stack):
                 "LD_LIBRARY_PATH": "/opt/python",
                 "BUCKET_NAME": media_bkt.bucket_name,
                 "S3_KEY_NAME": "3.mp4",
-                "DDB_TABLE_NAME": media_metadata_table.table_name},
+                "DDB_TABLE_NAME": media_metadata_table.table_name
+            },
             layers=[media_info_layer]
         )
         core.Tag.add(get_video_metadata_fn, key="Owner",
